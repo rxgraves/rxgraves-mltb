@@ -15,7 +15,7 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_PW }}
     - name: Building docker
-      run: docker image build . -t "${{ secrets.DOCKER_HUB_USERNAME }}"/mltb:anas
+      run: docker image build . -t "${{ secrets.DOCKER_HUB_USERNAME }}"/mltb:rxgraves
 
     - name: Pushing docker to docker.io
-      run: docker push "${{ secrets.DOCKER_HUB_USERNAME }}"/mltb:anas
+      run: docker push "${{ secrets.DOCKER_HUB_USERNAME }}"/mltb:rxgraves
